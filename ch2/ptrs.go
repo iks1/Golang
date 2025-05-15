@@ -37,5 +37,13 @@ incr(&v)
 fmt.Println(incr(&v)) //3
 */
 
+// new(T) returns pointer to variable
+/*
+p := new(int) // p, of type *int
+fmt.Println(*p)
+*p=2
+fmt.Println(*p)
+*/
+
 
 
