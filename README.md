@@ -16,6 +16,8 @@ ch6/
 ```
 ### OOPs in Go/ Method Writing
 
+[oops in golang vs other languages](ch6/methods.go)
+
 | OOP Concept    | Go Equivalent                                    |
 | -------------- | ------------------------------------------------ |
 | Class          | `struct` + method receivers                      |
@@ -23,3 +25,4 @@ ch6/
 | Interfaces     | Native interfaces (duck typing)                  |
 | Constructors   | Factory functions like `NewType()`               |
 | Access control | Exported (Capitalized) vs unexported (lowercase) |
+
