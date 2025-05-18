@@ -26,3 +26,6 @@ ch6/
 | Constructors   | Factory functions like `NewType()`               |
 | Access control | Exported (Capitalized) vs unexported (lowercase) |
 
+
+### Note for ch7
+Found a [youtube video](https://www.youtube.com/watch?v=SX1gT5A9H-U) for interface, might help to get started 
