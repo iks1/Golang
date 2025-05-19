@@ -1,6 +1,6 @@
 package main
 
-//interface inside interface
+//interface inside interface (embeddings)
 
 import(
 	"math"
