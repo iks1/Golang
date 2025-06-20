@@ -74,3 +74,5 @@ Found a [youtube video](https://www.youtube.com/watch?v=SX1gT5A9H-U) for interfa
 ### Note for ch8
 
 ### Notes on testing
+
+In Go, helper functions used inside test functions (like func TestXxx(t *testing.T)) must be defined before they are used, due to Go's strict top-to-bottom scoping rules. Also, function declarations using func name(...) are only allowed at the package level - inside functions, use anonymous functions assigned to variables (e.g., name := func(...) { ... }).
