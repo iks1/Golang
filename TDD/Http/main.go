@@ -21,12 +21,20 @@ func (i *InMemoryPlayStore) RecordWin(name string) {
 	i.store[name]++
 }
 
+func (i *InMemoryPlayStore) GetLeague() []Player {
+	var league []Player
+	for name, wins := range i.store {
+		league = append(league, Player{name, wins})
+	}
+	return league
+}
+
 
 func main(){
 	// before PlayerServer is struct
 	//handler := http.HandlerFunc(PlayerServer)
 	
 	// after PlayerServer is struct 
-	server := &PlayerServer{NewInMemoryPlayerStore()}
+	server := NewPlayerServer(NewInMemoryPlayerStore())
 	log.Fatal(http.ListenAndServe(":5000", server))
 }
